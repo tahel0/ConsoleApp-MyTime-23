@@ -47,9 +47,10 @@ namespace ConsoleApp67
 			out1 = value;
 		}
 
+		//שאלה ב.1
 		public int total ()
 		{
-			return 0; 
+			return GetIn1().Diff(GetOut1());
 		}
 
     }

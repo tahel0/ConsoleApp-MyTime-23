@@ -2,7 +2,7 @@
 using System.Net.Http.Headers;
 
 Parking[] cars = new Parking[10];
-
+//שאלה א
 static void First(Parking[] cars)
 {
     int firstCar = 0;
@@ -14,6 +14,19 @@ static void First(Parking[] cars)
         }
     }
 
-  Console.WriteLine(cars[firstCar].GetId()); 
+    Console.WriteLine(cars[firstCar].GetId());
 }
 
+//שאלה ב.2
+static int SumMoney(Parking[] cars)
+{
+    int sumMoney = 0;
+    for (int i = 0; i < cars.Length; i++)
+    {
+        if (cars[i].total()>120)
+        {
+            sumMoney+=cars[i].total()-120;
+        }
+    }
+    return sumMoney;
+}
